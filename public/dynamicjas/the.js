@@ -22,7 +22,7 @@ weatherForm.addEventListener('submit',(event) =>{
                 // messageTwo.textContent = data.error
             }else {
                 console.log(data.location)
-                messageOne.textContent = "The temperature in "+ location +" is: " + data.data
+                messageOne.textContent = "The temperature in "+ "<kbd>"  +location+ "<kbd>" +" is " + "<kbd>" + data.data + "</kbd>"
             }
         })
 
